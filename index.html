@@ -21,6 +21,7 @@
           fetch("https://api.meetup.com/find/upcoming_events?start_date_range=2018-06-01T00:00:00.000&end_date_range=2020-06-01T00:00:00.000&lat=37.77&lon=-122.41&text=games", {
             method: 'GET',
             headers: {
+              'Content-Type' : 'application/json',
               'Authorization' : header,
               'Origin' : 'https://mastrjj.github.io/',
             },
