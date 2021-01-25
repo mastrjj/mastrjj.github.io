@@ -9,7 +9,7 @@
       <button id="myButton" class="float-left submit-button" >Home</button>
       <button id="apiBtn">Search</button>
       <script type="text/javascript">
-        var url = 'https://secure.meetup.com/oauth2/authorize?client_id=8jhvj9qp5mc408od5bujmridfk&response_type=token&redirect_uri=http://localhost:3000/';
+        var url = 'https://secure.meetup.com/oauth2/authorize?client_id=8jhvj9qp5mc408od5bujmridfk&response_type=token&redirect_uri=https://mastrjj.github.io/';
         document.getElementById("myButton").onclick = function () {
           location.href = url;
         };
@@ -22,7 +22,7 @@
             method: 'GET',
             headers: {
               'Authorization' : header,
-              'Origin' : 'http://localhost:3000/',
+              'Origin' : 'https://mastrjj.github.io/',
             },
             credentials: 'include'
           })
