@@ -23,7 +23,7 @@ async function modifyPdf() {
     x: 5,
     y: 300,
     size: 14,
-    font: arial,
+    font: helveticaFont,
   })
 
   // Serialize the PDFDocument to bytes (a Uint8Array)
