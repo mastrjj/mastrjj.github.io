@@ -1,5 +1,11 @@
 const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
 
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function getRandomNum(length) {
     var randomChars = '123456789';
     var result = '';
@@ -40,6 +46,7 @@ async function modifyPdf() {
   const randString8 = getRandomString(8)
   const randString2 = getRandomString(2)
   const randNum6 = getRandomNum(6)
+  const randInt = getRandomIntInclusive(103, 119)
 
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
@@ -96,6 +103,12 @@ async function modifyPdf() {
 
   firstPage.drawText(randNum6, {
     x: 350,
+    y: 50,
+    size: 14,
+    font: helveticaFont,
+  })
+  firstPage.drawText(randInt, {
+    x: 400,
     y: 50,
     size: 14,
     font: helveticaFont,
