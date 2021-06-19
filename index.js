@@ -28,13 +28,15 @@ async function modifyPdf() {
     size: 14,
     font: helveticaFont,
   })
+
   firstPage.drawText(second_name, {
     x: 50,
     y: 250,
     size: 14,
     font: helveticaFont,
   })
-  firstPage.drawText(num_card, {
+
+  firstPage.drawText(card_num, {
     x: 100,
     y: 200,
     size: 14,
