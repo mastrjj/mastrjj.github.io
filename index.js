@@ -14,7 +14,7 @@ async function modifyPdf() {
   // Get the first page of the document
   const pages = pdfDoc.getPages()
   const firstPage = pages[0]
-  const textToPrint = document.getElementById("name").value
+  const first_name = document.getElementById("first_name").value
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
 
