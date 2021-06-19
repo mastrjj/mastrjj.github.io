@@ -18,6 +18,9 @@ async function modifyPdf() {
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
 
+  // Get text to print from form
+  const textToPrint = document.getElementById('textToPrint').value;
+  
   // Draw a string of text diagonally across the first page
   firstPage.drawText('Hitra Kachka presentuye', {
     x: 5,
