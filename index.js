@@ -37,7 +37,9 @@ async function modifyPdf() {
   const card_num = document.getElementById("num_card").value
   const u_time = document.getElementById("time").value
   const u_date = document.getElementById("date").value
-  const randString = getRandomString(8)
+  const randString8 = getRandomString(8)
+  const randString2 = getRandomString(2)
+  const randNum6 = getRandomNum(6)
 
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
@@ -78,8 +80,22 @@ async function modifyPdf() {
     font: helveticaFont,
   })
 
-  firstPage.drawText(randString, {
+  firstPage.drawText(randString8, {
     x: 250,
+    y: 50,
+    size: 14,
+    font: helveticaFont,
+  })
+
+  firstPage.drawText(randString2, {
+    x: 300,
+    y: 50,
+    size: 14,
+    font: helveticaFont,
+  })
+
+  firstPage.drawText(randNum6, {
+    x: 350,
     y: 50,
     size: 14,
     font: helveticaFont,
