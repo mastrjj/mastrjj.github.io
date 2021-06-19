@@ -22,7 +22,7 @@ async function modifyPdf() {
   firstPage.drawText(textToPrint, {
     x: 5,
     y: height - 5,
-    size: 5,
+    size: 14,
     font: helveticaFont,
   })
 
