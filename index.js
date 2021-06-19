@@ -2,7 +2,7 @@ const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
 
 async function modifyPdf() {
   // Fetch an existing PDF document
-  const url = 'pdfs/filled.pdf'
+  const url = 'pdfs/template.pdf'
   const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
 
   // Load a PDFDocument from the existing PDF bytes
@@ -19,7 +19,7 @@ async function modifyPdf() {
   const { width, height } = firstPage.getSize()
 
   // Draw a string of text diagonally across the first page
-  firstPage.drawText('Zaponki z Polsky Hitry Kachka presentuye', {
+  firstPage.drawText('Hitra Kachka presentuye', {
     x: 5,
     y: height / 2 + 300,
     size: 50,
