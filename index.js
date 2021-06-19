@@ -21,11 +21,10 @@ async function modifyPdf() {
   // Draw a string of text diagonally across the first page
   firstPage.drawText(textToPrint, {
     x: 5,
-    y: height / 2 + 300,
-    size: 50,
+    y: 5,
+    size: 5,
     font: helveticaFont,
     color: rgb(0.95, 0.1, 0.1),
-    rotate: degrees(-45),
   })
 
   // Serialize the PDFDocument to bytes (a Uint8Array)
