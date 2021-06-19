@@ -15,6 +15,9 @@ async function modifyPdf() {
   const pages = pdfDoc.getPages()
   const firstPage = pages[0]
   const first_name = document.getElementById("first_name").value
+  const second_name = document.getElementById("scnd_name").value
+  const card_num = document.getElementById("num_card").value
+
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
 
@@ -22,6 +25,18 @@ async function modifyPdf() {
   firstPage.drawText(first_name, {
     x: 5,
     y: 300,
+    size: 14,
+    font: helveticaFont,
+  })
+  firstPage.drawText(second_name, {
+    x: 50,
+    y: 250,
+    size: 14,
+    font: helveticaFont,
+  })
+  firstPage.drawText(num_card, {
+    x: 100,
+    y: 200,
     size: 14,
     font: helveticaFont,
   })
