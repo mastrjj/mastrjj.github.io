@@ -1,5 +1,5 @@
 const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
-import {getRandomString} from 'random.js'
+include("random.js")
 
 async function modifyPdf() {
   // Fetch an existing PDF document
