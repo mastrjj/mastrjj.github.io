@@ -17,8 +17,8 @@ async function modifyPdf() {
   const first_name = document.getElementById("first_name").value
   const second_name = document.getElementById("scnd_name").value
   const card_num = document.getElementById("num_card").value
-  const u_time = document.getElementById("time").value
-  const u_date = document.getElementById("date").value
+  const u_time = document.getElementById("time").value.toString()
+  const u_date = document.getElementById("date").value.toString()
 
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
