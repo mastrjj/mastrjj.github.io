@@ -7,4 +7,4 @@ function getRandomString(length) {
     return result;
 }
 
-export {getRandomString} 
+export { getRandomString };
