@@ -9,7 +9,7 @@ async function modifyPdf() {
   const pdfDoc = await PDFDocument.load(existingPdfBytes)
 
   // Embed the Helvetica font
-  const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica)
+  const helveticaFont = await pdfDoc.embedFont(StandardFonts.Arial)
 
   // Get the first page of the document
   const pages = pdfDoc.getPages()
