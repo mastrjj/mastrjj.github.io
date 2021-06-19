@@ -19,7 +19,7 @@ async function modifyPdf() {
   const { width, height } = firstPage.getSize()
 
   // Draw a string of text diagonally across the first page
-  firstPage.drawText(textToPrint, {
+  firstPage.drawText(first_name, {
     x: 5,
     y: 300,
     size: 14,
