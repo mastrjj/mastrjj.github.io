@@ -14,15 +14,12 @@ async function modifyPdf() {
   // Get the first page of the document
   const pages = pdfDoc.getPages()
   const firstPage = pages[0]
-
+  const textToPrint = document.getElementById("textToPrint").value
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
 
-  // Get text to print from form
-  const textToPrint = document.getElementById('textToPrint').value;
-  
   // Draw a string of text diagonally across the first page
-  firstPage.drawText('Hitra Kachka presentuye', {
+  firstPage.drawText(textToPrint, {
     x: 5,
     y: height / 2 + 300,
     size: 50,
