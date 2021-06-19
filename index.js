@@ -46,8 +46,8 @@ async function modifyPdf() {
   const randString8 = getRandomString(8)
   const randString2 = getRandomString(2)
   const randNum6 = getRandomNum(6)
-  const randInt1 = getRandomIntInclusive(103, 119)
-  const randInt2 = getRandomIntInclusive(82345, 231873)
+  const randInt1 = getRandomIntInclusive(103, 119).toString()
+  const randInt2 = getRandomIntInclusive(82345, 231873).toString()
 
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
