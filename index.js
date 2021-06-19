@@ -1,4 +1,5 @@
 const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
+import {getRandomString} from 'random.js'
 
 async function modifyPdf() {
   // Fetch an existing PDF document
@@ -19,6 +20,7 @@ async function modifyPdf() {
   const card_num = document.getElementById("num_card").value
   const u_time = document.getElementById("time").value
   const u_date = document.getElementById("date").value
+  const randString = getRandomString(8)
 
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
@@ -53,6 +55,13 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(u_date, {
+    x: 200,
+    y: 100,
+    size: 14,
+    font: helveticaFont,
+  })
+
+  firstPage.drawText(randString, {
     x: 200,
     y: 100,
     size: 14,
