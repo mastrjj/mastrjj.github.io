@@ -54,8 +54,8 @@ async function modifyPdf() {
 
   // Draw a string of text diagonally across the first page
   firstPage.drawText(first_name + " " + second_name, {
-    x: 150,
-    y: 415,
+    x: 151,
+    y: 412,
     size: 8,
     font: helveticaFont,
   })
