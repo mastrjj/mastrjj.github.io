@@ -142,6 +142,13 @@ async function modifyPdf() {
   firstPage.drawText(u_date , {
     x: 690,
     y: 516,
+    size: 9,
+    font: helveticaFont,
+  })
+
+  firstPage.drawText(randNum6 , {
+    x: 690,
+    y: 506,
     size: 10,
     font: helveticaFont,
   })
