@@ -82,6 +82,12 @@ async function modifyPdf() {
     font: helveticaFontBold,
   })
 
+  firstPage.drawText(randInt2, {
+    x: 20,
+    y: 435,
+    size: 8,
+    font: helveticaFontBold,
+  })
 
   firstPage.drawText(card_num, {
     x: 100,
@@ -107,13 +113,6 @@ async function modifyPdf() {
   firstPage.drawText(randInt1, {
     x: 100,
     y: 240,
-    size: 8,
-    font: helveticaFont,
-  })
-
-  firstPage.drawText(randInt2, {
-    x: 100,
-    y: 250,
     size: 8,
     font: helveticaFont,
   })
