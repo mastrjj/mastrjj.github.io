@@ -125,8 +125,8 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(randInt1, {
-    x: 650,
-    y: 550,
+    x: 670,
+    y: 540,
     size: 10,
     font: helveticaFontBold,
   })
