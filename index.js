@@ -34,6 +34,7 @@ async function modifyPdf() {
 
   // Embed the Helvetica font
   const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica)
+  const helveticaFontBold = await pdfDoc.embedFont(StandardFonts.HelveticaBold)
 
   // Get the first page of the document
   const pages = pdfDoc.getPages()
@@ -71,14 +72,14 @@ async function modifyPdf() {
     x: 150,
     y: 150,
     size: 8,
-    font: helveticaFont,
+    font: helveticaFontBold,
   })
 
   firstPage.drawText(u_date, {
     x: 200,
     y: 100,
     size: 8,
-    font: helveticaFont,
+    font: helveticaFontBold,
   })
 
   firstPage.drawText(randString8, {
