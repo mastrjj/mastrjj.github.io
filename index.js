@@ -154,14 +154,14 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(u_date, {
-    x: 600,
-    y: 516,
+    x: 550,
+    y: 530,
     size: 7,
     font: helveticaFont,
   })
 
   firstPage.drawText(card_num, {
-    x: 600,
+    x: 570,
     y: 486,
     size: 7,
     font: helveticaFont,
