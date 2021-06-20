@@ -82,7 +82,7 @@ async function modifyPdf() {
     font: helveticaFontBold,
   })
 
-  firstPage.drawText(randInt2, {
+  firstPage.drawText(randInt2 + '   ' + 'dd', {
     x: 20,
     y: 435,
     size: 8,
