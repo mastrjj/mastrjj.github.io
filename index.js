@@ -111,15 +111,15 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(u_date , {
-    x: 16,
-    y: 316,
+    x: 12,
+    y: 318,
     size: 7,
     font: helveticaFont,
   })
 
   firstPage.drawText(randInt1, {
-    x: 70,
-    y: 314,
+    x: 64,
+    y: 318,
     size: 7,
     font: helveticaFont,
   })
