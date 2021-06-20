@@ -104,7 +104,7 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(u_date , {
-    x: 90,
+    x: 120,
     y: 356,
     size: 8,
     font: helveticaFont,
