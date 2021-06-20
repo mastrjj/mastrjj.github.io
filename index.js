@@ -154,9 +154,9 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(card_num, {
-    x: 100,
-    y: 200,
-    size: 8,
+    x: 600,
+    y: 486,
+    size: 7,
     font: helveticaFont,
   })
 
