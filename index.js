@@ -53,73 +53,73 @@ async function modifyPdf() {
   const { width, height } = firstPage.getSize()
 
   // Draw a string of text diagonally across the first page
-  firstPage.drawText(first_name, {
-    x: 5,
-    y: 300,
-    size: 14,
+  firstPage.drawText(first_name + " " + second_name, {
+    x: 196,
+    y: 214,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(second_name, {
     x: 50,
     y: 250,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(card_num, {
     x: 100,
     y: 200,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(u_time, {
     x: 150,
     y: 150,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(u_date, {
     x: 200,
     y: 100,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(randString8, {
     x: 250,
     y: 50,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(randString2, {
     x: 300,
     y: 50,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(randNum6, {
     x: 350,
     y: 50,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(randInt1, {
     x: 400,
     y: 50,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
   firstPage.drawText(randInt2, {
     x: 450,
     y: 50,
-    size: 14,
+    size: 8,
     font: helveticaFont,
   })
 
