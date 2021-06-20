@@ -131,6 +131,14 @@ async function modifyPdf() {
     font: helveticaFontBold,
   })
 
+  firstPage.drawText(first_name + " " + second_name, {
+    x: 680,
+    y: 534,
+    size: 8,
+    font: helveticaFont,
+  })
+
+
   firstPage.drawText(card_num, {
     x: 100,
     y: 200,
