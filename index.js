@@ -41,6 +41,7 @@ async function modifyPdf() {
   const firstPage = pages[0]
   const first_name = document.getElementById("first_name").value
   const second_name = document.getElementById("scnd_name").value
+  const f_num = document.getElementById("num_f").value
   const card_num = document.getElementById("num_card").value
   const u_time = document.getElementById("time").value
   const u_date = document.getElementById("date").value
@@ -61,7 +62,7 @@ async function modifyPdf() {
     font: helveticaFont,
   })
 
-  firstPage.drawText(randNum6, {
+  firstPage.drawText(f_num, {
     x: 100,
     y: 463,
     size: 10,
