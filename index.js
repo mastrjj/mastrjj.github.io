@@ -110,6 +110,14 @@ async function modifyPdf() {
     font: helveticaFont,
   })
 
+  firstPage.drawText(u_date , {
+    x: 16,
+    y: 316,
+    size: 8,
+    font: helveticaFont,
+  })
+
+
   firstPage.drawText(card_num, {
     x: 100,
     y: 200,
