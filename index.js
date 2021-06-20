@@ -62,15 +62,15 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(u_date, {
-    x: 80,
-    y: 450,
+    x: 78,
+    y: 454,
     size: 8,
     font: helveticaFontBold,
   })
 
   firstPage.drawText(u_time, {
-    x: 20,
-    y: 440,
+    x: 16,
+    y: 442,
     size: 8,
     font: helveticaFontBold,
   })
