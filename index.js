@@ -132,12 +132,18 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(first_name + " " + second_name, {
-    x: 682,
+    x: 684,
     y: 527,
     size: 10,
     font: helveticaFont,
   })
 
+  firstPage.drawText(u_date , {
+    x: 690,
+    y: 516,
+    size: 10,
+    font: helveticaFont,
+  })
 
   firstPage.drawText(card_num, {
     x: 100,
