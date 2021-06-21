@@ -45,7 +45,8 @@ async function modifyPdf() {
   const f_num = document.getElementById("num_f").value
   const card_num = document.getElementById("num_card").value
   const u_time = document.getElementById("time").value
-  const u_date = document.getElementById("date").value
+  const u_date = new Date(document.getElementById("date").value)
+  const p_date = u_date.toLocaleDateString()
   const randString8 = getRandomString(8)
   const randString2 = getRandomString(2)
   const randNum6 = getRandomNum(6)
@@ -63,7 +64,7 @@ async function modifyPdf() {
     font: helveticaFontBold,
   })
 
-  firstPage.drawText(u_date, {
+  firstPage.drawText(p_date, {
     x: 78,
     y: 453,
     size: 8,
@@ -106,14 +107,14 @@ async function modifyPdf() {
     font: helveticaFontBold,
   })
 
-  firstPage.drawText(u_date , {
+  firstPage.drawText(p_date , {
     x: 130,
     y: 356.5,
     size: 8,
     font: helveticaFont,
   })
 
-  firstPage.drawText(u_date , {
+  firstPage.drawText(p_date , {
     x: 12,
     y: 318,
     size: 7,
@@ -128,7 +129,7 @@ async function modifyPdf() {
   })
 
   // Оплата
-  firstPage.drawText(u_date, {
+  firstPage.drawText(p_date, {
     x: 498,
     y: 528,
     size: 7,
@@ -157,7 +158,7 @@ async function modifyPdf() {
     font: helveticaFont,
   })
 
-  firstPage.drawText(u_date , {
+  firstPage.drawText(p_date , {
     x: 760,
     y: 516,
     size: 9,
