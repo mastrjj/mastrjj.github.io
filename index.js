@@ -122,22 +122,22 @@ async function modifyPdf() {
 
   firstPage.drawText(randInt1, {
     x: 64,
-    y: 318,
+    y: 321,
     size: 7,
     font: helveticaFont,
   })
 
   // Оплата
   firstPage.drawText(card_num, {
-    x: 550,
+    x: 535,
     y: 474,
     size: 7,
     font: helveticaFont,
   })
 
   firstPage.drawText(u_date, {
-    x: 551,
-    y: 531,
+    x: 520,
+    y: 525,
     size: 7,
     font: helveticaFont,
   })
