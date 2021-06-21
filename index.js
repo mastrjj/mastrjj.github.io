@@ -129,8 +129,8 @@ async function modifyPdf() {
 
   // Оплата
   firstPage.drawText(u_date, {
-    x: 500,
-    y: 527,
+    x: 498,
+    y: 528,
     size: 7,
     font: helveticaFont,
   })
