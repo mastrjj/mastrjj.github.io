@@ -140,7 +140,7 @@ async function modifyPdf() {
   })
 
   // Оплата
-  firstPage.drawText(p_date.slice(6,7), {
+  firstPage.drawText(p_date.slice(0,5)+ p_date.slice(8), {
     x: 497,
     y: 527.5,
     size: 7,
