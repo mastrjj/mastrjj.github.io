@@ -113,7 +113,6 @@ async function modifyPdf() {
     font: helveticaFont,
   })
 
-  // Чек оплаты
   firstPage.drawText(u_date , {
     x: 12,
     y: 318,
@@ -123,7 +122,22 @@ async function modifyPdf() {
 
   firstPage.drawText(randInt1, {
     x: 64,
-    y: 325,
+    y: 318,
+    size: 7,
+    font: helveticaFont,
+  })
+
+  // Оплата
+  firstPage.drawText(card_num, {
+    x: 550,
+    y: 474,
+    size: 7,
+    font: helveticaFont,
+  })
+
+  firstPage.drawText(u_date, {
+    x: 551,
+    y: 531,
     size: 7,
     font: helveticaFont,
   })
@@ -157,19 +171,6 @@ async function modifyPdf() {
     font: helveticaFontBold,
   })
 
-  firstPage.drawText(u_date, {
-    x: 551,
-    y: 531,
-    size: 7,
-    font: helveticaFont,
-  })
-
-  firstPage.drawText(card_num, {
-    x: 570,
-    y: 476,
-    size: 7,
-    font: helveticaFont,
-  })
 
   // Serialize the PDFDocument to bytes (a Uint8Array)
   const pdfBytes = await pdfDoc.save()
