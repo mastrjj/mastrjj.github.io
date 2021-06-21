@@ -100,14 +100,14 @@ async function modifyPdf() {
 
   // Таблица
   firstPage.drawText(randString8 , {
-    x: 70,
+    x: 68,
     y: 356,
     size: 8,
     font: helveticaFontBold,
   })
 
   firstPage.drawText(u_date , {
-    x: 135,
+    x: 133,
     y: 356,
     size: 8,
     font: helveticaFont,
