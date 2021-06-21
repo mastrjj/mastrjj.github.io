@@ -28,13 +28,13 @@ async function modifyPdf() {
   // Fetch an existing PDF document
   const select = document.getElementById("select").value
   switch (select) {
-    case 1:
+    case "1":
       const url = 'pdfs/template1.pdf'
       break;
-    case 2:
+    case "2":
       const url = 'pdfs/template2.pdf'
       break;
-    case 3:
+    case "3":
       const url = 'pdfs/template3.pdf'
       break;
   }
