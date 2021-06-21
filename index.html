@@ -9,8 +9,8 @@
   <body>
     <form>
       <div class="form-group">
-        <label for="select">Выбор отеля</label>
-        <select class="form-select" aria-label="Default select example" id="select">
+        <div for="select">Выбор отеля</div>
+        <select class="form-select" aria-div="Default select example" id="select">
           <option selected>Не выбрано</option>
           <option value="1">80440 GLYSY</option>
           <option value="2">69800 Lyon Saint Priest</option>
@@ -18,26 +18,28 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="date">Дата заселения<label>
+        <div for="date">Дата заселения<div>
         <input type="datetime-local" class="form-control" id="date">
       </div>
       <div class="form-group">
-        <label for="first_name">Имя<label>
+        <div for="first_name">Имя<div>
         <input type="text" class="form-control" id="first_name" placeholder="PAWEL">
       </div>
       <div class="form-group">
-        <label for="scnd_name">Фамилия<label>
+        <div for="scnd_name">Фамилия<div>
         <input type="text" class="form-control" id="scnd_name" placeholder="HITRY">
       </div>
       <div class="form-group">
-        <label for="num_f">Номер фактуры<label>
+        <div for="num_f">Номер фактуры<div>
         <input type="text" class="form-control" id="num_f" placeholder="KACHKA">
       </div>
       <div class="form-group">
-        <label for="num_card">Цифры карточки<label>
+        <div for="num_card">Цифры карточки<div>
         <input type class="form-control" id="num_card" placeholder="XXXX" maxlength="4">
       </div>
-      <button onclick="modifyPdf()" class="btn btn-primary">Print PDF</button>
+      <div>
+        <button onclick="modifyPdf()" class="btn btn-primary">Print PDF</button>
+      </div>
     </form>
   </body>
 </html>
