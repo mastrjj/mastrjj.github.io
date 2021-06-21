@@ -128,7 +128,6 @@ async function modifyPdf() {
   })
 
   // Оплата
-
   firstPage.drawText(u_date, {
     x: 500,
     y: 527,
