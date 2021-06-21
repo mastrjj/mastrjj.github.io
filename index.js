@@ -46,7 +46,7 @@ async function modifyPdf() {
   const card_num = document.getElementById("num_card").value
   const u_time = document.getElementById("time").value
   const u_date = new Date(document.getElementById("date").value)
-  const p_date = u_date.toLocaleDateString()
+  const p_date = u_date.toLocaleDateString('en-GB')
   const randString8 = getRandomString(8)
   const randString2 = getRandomString(2)
   const randNum6 = getRandomNum(6)
