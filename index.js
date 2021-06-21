@@ -128,16 +128,17 @@ async function modifyPdf() {
   })
 
   // Оплата
-  firstPage.drawText(card_num, {
-    x: 535,
-    y: 474,
+
+  firstPage.drawText(u_date, {
+    x: 500,
+    y: 527,
     size: 7,
     font: helveticaFont,
   })
 
-  firstPage.drawText(u_date, {
-    x: 520,
-    y: 525,
+  firstPage.drawText(card_num, {
+    x: 535,
+    y: 474,
     size: 7,
     font: helveticaFont,
   })
