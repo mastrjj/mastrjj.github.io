@@ -137,7 +137,7 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(second_name, {
-    x: 804 - second_name.length,
+    x: 804 - second_name.length*4,
     y: 527,
     size: 9,
     font: helveticaFont,
