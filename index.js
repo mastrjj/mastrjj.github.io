@@ -55,30 +55,23 @@ async function modifyPdf() {
   // Get the width and height of the first page
   const { width, height } = firstPage.getSize()
 
-  // Draw a string of text diagonally across the first page
-  firstPage.drawText(first_name + " " + second_name, {
-    x: 154,
-    y: 412.5,
-    size: 8,
-    font: helveticaFont,
-  })
-
+  // Правая шапка
   firstPage.drawText(f_num, {
     x: 100,
-    y: 463,
+    y: 462,
     size: 10,
     font: helveticaFontBold,
   })
 
   firstPage.drawText(u_date, {
     x: 78,
-    y: 453,
+    y: 454,
     size: 8,
     font: helveticaFontBold,
   })
 
   firstPage.drawText(u_time, {
-    x: 12,
+    x: 13,
     y: 445,
     size: 8,
     font: helveticaFontBold,
@@ -92,12 +85,20 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(randString8, {
-    x: 70,
+    x: 71,
     y: 426,
     size: 8,
     font: helveticaFont,
   })
 
+  firstPage.drawText(first_name + " " + second_name, {
+    x: 154,
+    y: 412.5,
+    size: 8,
+    font: helveticaFont,
+  })
+
+  // Таблица
   firstPage.drawText(randString8 , {
     x: 70,
     y: 356,
@@ -112,6 +113,7 @@ async function modifyPdf() {
     font: helveticaFont,
   })
 
+  // Чек оплаты
   firstPage.drawText(u_date , {
     x: 12,
     y: 318,
@@ -126,6 +128,7 @@ async function modifyPdf() {
     font: helveticaFont,
   })
 
+  // Левая шапка
   firstPage.drawText(randInt1, {
     x: 720,
     y: 544,
@@ -141,7 +144,7 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(u_date , {
-    x: 758,
+    x: 759,
     y: 516,
     size: 9,
     font: helveticaFont,
