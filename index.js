@@ -119,7 +119,7 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(p_date1 , {
-    x: 180,
+    x: 188,
     y: 356.5,
     size: 8,
     font: helveticaFont,
@@ -141,15 +141,15 @@ async function modifyPdf() {
 
   // Оплата
   firstPage.drawText(p_date, {
-    x: 498,
-    y: 528,
+    x: 497,
+    y: 527,
     size: 7,
     font: helveticaFont,
   })
 
   firstPage.drawText(p_time1, {
-    x: 520,
-    y: 528,
+    x: 540,
+    y: 527,
     size: 7,
     font: helveticaFont,
   })
