@@ -8,32 +8,33 @@
   </head>
   <body>
     <form>
-      <div class="mb-3">
+      <div class="form-group">
+        <label for="select">Выбор отеля</label>
         <select class="form-select" aria-label="Default select example" id="select">
-          <option selected>Выбор отеля</option>
+          <option selected>Не выбрано</option>
           <option value="1">80440 GLYSY</option>
           <option value="2">69800 Lyon Saint Priest</option>
           <option value="3">87280 Limoges</option>
         </select>
       </div>
-      <div class="mb-3">
+      <div class="form-group">
         <label for="date">Дата заселения<label>
         <input type="datetime-local" class="form-control" id="date">
       </div>
-      <div class="mb-3">
+      <div class="form-group">
         <label for="first_name">Имя<label>
         <input type="text" class="form-control" id="first_name" placeholder="PAWEL">
       </div>
-      <div class="mb-3">
+      <div class="form-group">
         <label for="scnd_name">Фамилия<label>
         <input type="text" class="form-control" id="scnd_name" placeholder="HITRY">
       </div>
-      <div class="mb-3">
-        <label for="scnd_name">Номер фактуры<label>
+      <div class="form-group">
+        <label for="num_f">Номер фактуры<label>
         <input type="text" class="form-control" id="num_f" placeholder="KACHKA">
       </div>
-      <div class="mb-3">
-        <label for="scnd_name">Цифры карточки<label>
+      <div class="form-group">
+        <label for="num_card">Цифры карточки<label>
         <input type class="form-control" id="num_card" placeholder="XXXX" maxlength="4">
       </div>
       <button onclick="modifyPdf()" class="btn btn-primary">Print PDF</button>
