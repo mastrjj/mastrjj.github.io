@@ -58,20 +58,20 @@ async function modifyPdf() {
   // Правая шапка
   firstPage.drawText(f_num, {
     x: 100,
-    y: 462,
+    y: 462.5,
     size: 10,
     font: helveticaFontBold,
   })
 
   firstPage.drawText(u_date, {
     x: 78,
-    y: 454,
+    y: 453,
     size: 8,
     font: helveticaFontBold,
   })
 
   firstPage.drawText(u_time, {
-    x: 13,
+    x: 12,
     y: 445,
     size: 8,
     font: helveticaFontBold,
@@ -79,13 +79,13 @@ async function modifyPdf() {
 
   firstPage.drawText(randInt2 + '   ' + 'dd', {
     x: 36,
-    y: 435,
+    y: 435.5,
     size: 8,
     font: helveticaFontBold,
   })
 
   firstPage.drawText(randString8, {
-    x: 71,
+    x: 75,
     y: 426,
     size: 8,
     font: helveticaFont,
