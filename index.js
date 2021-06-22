@@ -202,5 +202,5 @@ async function modifyPdf() {
   const pdfBytes = await pdfDoc.save()
 
   // Trigger the browser to download the PDF document
-  download(pdfBytes, select + ".pdf", "application/pdf");
+  download(pdfBytes, arrival_datetime + ".pdf", "application/pdf");
 }
