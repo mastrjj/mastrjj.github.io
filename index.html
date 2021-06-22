@@ -17,11 +17,26 @@
           <option value="3">87280 Limoges</option>
         </select>
       </div>
-      <input type="datetime-local" class="form-control" id="date">
-      <input type="text" class="form-control" id="first_name" placeholder="PAWEL">
-      <input type="text" class="form-control" id="scnd_name" placeholder="HITRY">
-      <input type="text" class="form-control" id="num_f" placeholder="KACHKA">
-      <input type class="form-control" id="num_card" placeholder="XXXX" maxlength="4">
+      <label for="date">Дата и время</label>
+      <div>
+        <input type="datetime-local" class="form-control" id="date">
+      </div>
+      <label for="first_name">Имя</label>
+      <div>
+        <input type="text" class="form-control" id="first_name" placeholder="PAWEL">
+      </div>
+      <label for="first_name">Фамилия</label>
+      <div>
+        <input type="text" class="form-control" id="scnd_name" placeholder="HITRY">
+      </div>
+      <label for="first_name">№ Фактуры</label>
+      <div>
+        <input type="text" class="form-control" id="num_f" placeholder="KACHKA">
+      </div>
+      <label for="first_name">№ Карты</label>
+      <div>
+        <input type class="form-control" id="num_card" placeholder="XXXX" maxlength="4">
+      </div>
       <button onclick="modifyPdf()" class="btn btn-primary ">Print PDF</button>
     <form>
   </body>
