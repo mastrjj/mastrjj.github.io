@@ -177,15 +177,15 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(second_name, {
-    x: 796 - second_name.length*4,
-    y: 527,
+    x: 798 - second_name.length*4,
+    y: 528,
     size: 9,
     font: helveticaFont,
   })
 
   firstPage.drawText(p_date , {
     x: 760,
-    y: 516,
+    y: 517,
     size: 9,
     font: helveticaFont,
   })
