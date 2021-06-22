@@ -27,7 +27,7 @@ function getRandomString(length) {
 async function modifyPdf() {
   // Fetch an existing PDF document
   const select = document.getElementById("select").value
-  const url = 'pdfs/template' + select + '.pdf'
+  const url = 'templates/template' + select + '.pdf'
   const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
 
   // Load a PDFDocument from the existing PDF bytes
