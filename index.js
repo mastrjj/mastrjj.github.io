@@ -89,8 +89,8 @@ async function modifyPdf() {
     font: helveticaFontBold,
   })
 
-  firstPage.drawText(randString2, {
-    x: 54,
+  firstPage.drawText(randString2.toLowerCase(), {
+    x: 60,
     y: 435,
     size: 8,
     font: helveticaFontBold,
