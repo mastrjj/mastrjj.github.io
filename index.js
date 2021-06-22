@@ -69,21 +69,28 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(p_date, {
-    x: 78,
+    x: 77,
     y: 453,
     size: 8,
     font: helveticaFontBold,
   })
 
   firstPage.drawText(p_time, {
-    x: 12,
-    y: 445,
+    x: 11,
+    y: 444,
     size: 8,
     font: helveticaFontBold,
   })
 
-  firstPage.drawText(randInt2 + '   ' + 'dd', {
+  firstPage.drawText(randInt2, {
     x: 36,
+    y: 435,
+    size: 8,
+    font: helveticaFontBold,
+  })
+
+  firstPage.drawText("dd", {
+    x: 44,
     y: 435,
     size: 8,
     font: helveticaFontBold,
@@ -134,7 +141,7 @@ async function modifyPdf() {
 
   firstPage.drawText(randInt1, {
     x: 64,
-    y: 318,
+    y: 322,
     size: 7,
     font: helveticaFont,
   })
@@ -148,7 +155,7 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(p_time1, {
-    x: 535,
+    x: 534,
     y: 527.5,
     size: 7,
     font: helveticaFont,
