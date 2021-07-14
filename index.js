@@ -163,7 +163,7 @@ async function modifyPdf() {
 
   firstPage.drawText(card_num, {
     x: 534,
-    y: 473,
+    y: 474,
     size: 7,
     font: helveticaFont,
   })
@@ -177,7 +177,7 @@ async function modifyPdf() {
   })
 
   firstPage.drawText(second_name, {
-    x: 798 - second_name.length*4.3,
+    x: 798 - second_name.length*4.5,
     y: 528,
     size: 9,
     font: helveticaFont,
