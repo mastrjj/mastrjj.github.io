@@ -76,7 +76,7 @@ async function modifyPdf() {
     font: helveticaFontBold,
   })
 
-  firstPage.drawText(p_time, {
+  firstPage.drawText(p_time + ':00', {
     x: 11,
     y: 444,
     size: 8,
